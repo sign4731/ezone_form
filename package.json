@@ -1,0 +1,25 @@
+{
+  "name": "ezone_form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sign4731/ezone_form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sign4731/ezone_form/issues"
+  },
+  "homepage": "https://github.com/sign4731/ezone_form#readme",
+  "devDependencies": {
+    "sass": "^1.32.11",
+    "vite": "^2.2.1"
+  }
+}

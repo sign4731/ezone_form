@@ -13,11 +13,12 @@ body{
     background-color: v.$input_field;
      border: 0.5px solid v.$input_stroke;
       height:40px;
-     width: 100%;
+     width: 98.8%;
     border-radius: 7px;
     margin: 5px 0;
 
     position: relative;
+
 }
 
 .form_group_names label, body > main > div > div > div > div.card_contents.card_form > form > div > label{
@@ -29,25 +30,45 @@ body{
     display: flex;
     align-items: center;
     margin: 5px 0;
+
+       padding: 0 5vw;
 }
 
-.checkfield_label{
+.checkfield_wrapper{
      background-color: v.$input_field;
      border: 0.5px solid v.$input_stroke;
-    height:40px;
+    
      width: 100%;
     border-radius: 7px;
     margin: 5px 0;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+   
     margin: 5px 0;
+
+    label {
+        margin-top: 10px;
+    }
+
+     ul{
+       list-style-type: none;
+       margin: 0;
+    padding: 0;
+ }
+
+}
+.checkfield_wrapper label, .checkfield_wrapper input {
+    padding: 0 5vw;
 }
 
+
+
 .dropdown{
-    display: none;
+   padding-top: 20px;
+      padding-left: 5vw;
 }
- 
+
 
 
 

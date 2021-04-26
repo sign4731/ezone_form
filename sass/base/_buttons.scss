@@ -1,0 +1,14 @@
+@use "../abstracts/_vars.scss" as v;
+
+.card button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #bef8b9;
+  border-radius: 25px;
+  color: #bef8b9;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  //display: inline-block;
+  font-size: 10px;
+  float: right;
+}

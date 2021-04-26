@@ -1,0 +1,22 @@
+@use "../abstracts/_vars.scss" as v;
+
+.card_welcome,
+.card_thankyou {
+  background-color: v.$dark_blue;
+  border-radius: 25px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+
+  p {
+    padding: 20px 0 20px 0;
+  }
+
+  h2 {
+    padding: 20px 0 20px 0;
+  }
+
+  .line {
+    border: 1px solid #bef8b9;
+    max-width: 50px;
+  }
+}

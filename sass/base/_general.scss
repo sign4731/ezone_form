@@ -17,3 +17,15 @@ body{
     min-height: 90vh;
     max-width: 90vw;
 }
+
+@media screen and (min-width: 600px) {
+.card {
+    max-width: 60vw;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.card {
+    max-width: 40vw;
+}
+}

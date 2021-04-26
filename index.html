@@ -22,16 +22,24 @@
             <div class="card_contents card_form">
               <h1>SIGN UP</h1>
               <p>Fill out your information below so we can create the best fitting content for your needs.</p>
-              <form action="">
+              <form>
                 <div class="form_group">
                   <div class="form_group_names">
+                        <label for="first_name">FIRSTNAME</label>
                     <input type="text" id="first_name" name="first_name" />
-                    <label for="first_name"></label>
+              
+                  <label for="last_name">LASTNAME</label>
+                    <input type="text" id="last_name" name="last_name" />
                   </div>
-                  <input type="email" id="email" name="email" />
-                  <label for="email"></label>
 
-                  <div class="dropdown platforms">
+                   <label for="email">E-MAIL</label>
+                  <input type="email" id="email" name="email" />
+
+                  <div class="platforms">
+                  <div class="checkfield_label">
+                   <label for="">WHAT PLATFORM DO YOU USE?</label>
+                   </div>
+                    <div class="dropdown">
                     <ul>
                       <li>
                         <input type="checkbox" id="windows" name="platform" />
@@ -50,10 +58,14 @@
                         <label for="xbox" name="platform">Xbox</label>
                       </li>
                     </ul>
+                    </div>
                   </div>
 
-                  <div class="dropdown types">
+                  <div class="types">
+                  <div class="checkfield_label">
                     <label for="">WHAT TYPE OF GAMES DO YOU PLAY?</label>
+                    </div>
+                    <div class="dropdown">
                     <ul>
                       <li>
                         <input type="checkbox" id="fps" name="type" />
@@ -112,10 +124,14 @@
                         <label for="platform" name="type">Platform</label>
                       </li>
                     </ul>
+                    </div>
                   </div>
 
-                  <div class="dropdown games">
+                  <div class="games">
+                <div class="checkfield_label">
                     <label for="">WHAT GAMES DO YOU PLAY?</label>
+                 </div>
+                    <div class="dropdown">
                     <ul>
                       <li>
                         <input type="checkbox" id="csgo" name="game" />
@@ -202,10 +218,14 @@
                         <label for="minecraft" name="game">Minecraft</label>
                       </li>
                     </ul>
+                    </div>
                   </div>
 
-                  <div class="dropdown areas">
+                  <div class="areas">
+                  <div class="checkfield_label">
                     <label for="">WHAT AREAS WOULD YOU LIKE TO IMPROVE?</label>
+                    </div>
+                    <div class="dropdown">
                     <ul>
                       <li>
                         <input type="checkbox" id="coordination" name="areas" />
@@ -273,7 +293,9 @@
                       </li>
                     </ul>
                   </div>
+                  </div>
                 </div>
+                 <button>I'M IN!<span class="arrow"></span></button>
               </form>
             </div>
 

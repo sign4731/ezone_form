@@ -1,0 +1,30 @@
+@use "../abstracts/_vars.scss" as v;
+
+@font-face {
+  font-family: 'sharpiro-bold';
+  src:  url('/ezone-fonts/sharpiro-bold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'sharpiro-regular';
+  src:  url('/ezone-fonts/sharpiro-regular.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'uniform-black';
+  src:  url('/ezone-fonts/uniform-pro-con-black.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'uniform-medium';
+  src:  url('/ezone-fonts/uniform-pro-con-medium.woff2') format('woff2'),
+}
+
+
+.card h1 {
+color: v.$peach;
+}
+
+.card_form h1{
+color: v.$dark_blue;
+}

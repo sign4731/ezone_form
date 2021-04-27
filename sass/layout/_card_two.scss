@@ -1,74 +1,69 @@
 @use "../abstracts/_vars.scss" as v;
 
-body{
-    background-color: grey;
+body {
+  background-color: grey;
 }
 
-.card .card_form{
-    background-color: v.$white;
-    padding: 10%;
+.card .card_form {
+  background-color: v.$white;
+  padding: 10%;
 }
 
-.form_group_names input, #email {
-    background-color: v.$input_field;
-     border: 0.5px solid v.$input_stroke;
-      height:40px;
-     width: 98.8%;
-    border-radius: 7px;
-    margin: 5px 0;
+.form_group_names input,
+#email {
+  background-color: v.$input_field;
+  border: 0.5px solid v.$input_stroke;
+  height: 40px;
+  width: 98.8%;
+  border-radius: 7px;
+  margin: 5px 0;
 
-    position: relative;
-
+  position: relative;
 }
 
-.form_group_names label, body > main > div > div > div > div.card_contents.card_form > form > div > label{
-    position: absolute;
-    z-index: 1;
-    height:40px;
-    width: 100%;
+.form_group_names label,
+body > main > div > div > div > div.card_contents.card_form > form > div > label {
+  position: absolute;
+  z-index: 1;
+  height: 40px;
+  width: 100%;
 
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
 
-       padding: 0 25px;
+  padding: 0 25px;
 }
 
-.checkfield_wrapper{
-     background-color: v.$input_field;
-     border: 0.5px solid v.$input_stroke;
-    
-     width: 100%;
-    border-radius: 7px;
-    margin: 5px 0;
+.checkfield_wrapper {
+  background-color: v.$input_field;
+  border: 0.5px solid v.$input_stroke;
 
-    display: flex;
-    flex-direction: column;
-   
-    margin: 5px 0;
+  width: 100%;
+  border-radius: 7px;
+  margin: 5px 0;
 
-    label {
-        margin-top: 10px;
-    }
+  display: flex;
+  flex-direction: column;
 
-     ul{
-       list-style-type: none;
-       margin: 0;
+  margin: 5px 0;
+
+  label {
+    margin-top: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
- }
-
+  }
 }
-.checkfield_wrapper label, .checkfield_wrapper input {
-     padding: 0 25px;
-}
-
-
-
-.dropdown{
-   padding-top: 20px;
-      padding-left: 5vw;
+.checkfield_wrapper label,
+.checkfield_wrapper input {
+  padding: 0 25px;
 }
 
-
-
-
+.dropdown {
+  padding-top: 20px;
+  padding-left: 5vw;
+}

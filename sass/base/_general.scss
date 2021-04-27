@@ -15,6 +15,10 @@ body {
   //   width: 100vw;
   //   min-height: 600px;
 }
+.card-wrapper {
+  padding: 30px;
+  position: relative;
+}
 
 .card {
   //   min-height: 600px;
@@ -25,18 +29,21 @@ body {
   .card_thankyou {
     border-radius: 50px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
-    padding: 50px;
+    // padding: 30px;
   }
 
   .card_welcome,
   .card_thankyou {
-    min-height: 400px;
+    min-height: 600px;
   }
 }
 
 @media screen and (min-width: 600px) {
   .card {
     max-width: 350px;
+  }
+  .card-wrapper {
+    padding: 70px;
   }
 }
 

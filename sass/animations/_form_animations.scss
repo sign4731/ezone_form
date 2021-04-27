@@ -1,6 +1,9 @@
 input[type="text"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+input[type="text"]:valid,
+input[type="email"]:valid {
   ~ label {
     transform: translate(-12%, -30%) scale(0.75);
+    opacity: 0.6;
   }
 }

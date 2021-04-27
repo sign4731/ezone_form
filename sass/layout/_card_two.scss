@@ -23,12 +23,13 @@ body {
 #email {
   background-color: v.$input_field;
   border: 0.5px solid v.$input_stroke;
-  height: 40px;
+  height: 30px;
   width: 98.8%;
   border-radius: 7px;
   margin-top: 25px;
 
   position: relative;
+  padding: 10px 0 0 20px;
 }
 
 .form_group_names label,
@@ -45,10 +46,13 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   transition: 0.2s ease;
 }
 
+<<<<<<< HEAD
 #last_name + label {
   margin-top: 26px;
 }
 
+=======
+>>>>>>> 10f16ca961d3a2b2c1c9616fc70698f440e5e633
 #email + label {
   color: grey;
 }
@@ -124,6 +128,14 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   }
   #last_name {
     margin-left: 29px;
+  }
+
+  #last_name + label {
+    margin-top: 32px;
+  }
+
+  #email {
+    width: 94.8%;
   }
 
   body > main > div > div > div > div.card_contents.card_form > form > div.form_group > div.form_group_names > label {

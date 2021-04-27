@@ -1,0 +1,5 @@
+input[type="text"]:focus {
+  ~ label {
+    transform: translate(-12%, -50%) scale(0.75);
+  }
+}

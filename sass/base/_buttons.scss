@@ -61,7 +61,7 @@
   transition: 0.7s;
 }
 
-button:hover {
+.background button {
   animation: pulse 1s infinite;
   animation-timing-function: linear;
 }
@@ -71,7 +71,7 @@ button:hover {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   100% {
     transform: scale(1);

@@ -53,7 +53,7 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
 .checkfield_wrapper {
   background-color: v.$input_field;
   border: 0.5px solid v.$input_stroke;
-  height: 40px;
+  min-height: 40px;
   width: 100%;
   border-radius: 7px;
   margin: 5px 0;
@@ -89,6 +89,7 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   padding-bottom: 20px;
 
   display: none;
+  transition: 1s;
 }
 
 .card_form li {

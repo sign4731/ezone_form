@@ -1,0 +1,53 @@
+@use "../abstracts/_vars.scss" as v;
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:valid,
+input[type="email"]:valid {
+  background-color: v.$input_field;
+  color: v.$dark_blue;
+  ~ label {
+    transform: translate(-12%, -30%) scale(0.75);
+    opacity: 0.6;
+  }
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  background-color: v.$input_field;
+  outline: none;
+  box-shadow: 0 0 0 2px v.$dark_blue;
+}
+
+.checkmark {
+  width: 15px;
+  height: 12.33px;
+  background-image: url(/img/check-mark.svg);
+  background-size: cover;
+  position: absolute;
+  margin: -27px 0 0px 257px;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+  ~ .checkmark {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1000px) {
+  #first_name ~ .checkmark {
+    margin: -26px 0 0px 140px;
+  }
+
+  #last_name ~ .checkmark {
+    margin: 40px 0 0px 389px;
+  }
+
+  #email ~ .checkmark {
+    margin: -26px 0 0px 389px;
+  }
+}

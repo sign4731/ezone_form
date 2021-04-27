@@ -12,6 +12,14 @@
   float: right;
 }
 
+.card_welcome button {
+  width: 190px;
+}
+
+.card_thankyou button {
+  width: 200px;
+}
+
 .card button:hover {
   background-color: v.$light_green;
   color: v.$black;

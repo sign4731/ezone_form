@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", init);
 function init() {
   console.log("page is loaded");
   getData();
+  createtoggleboxes();
 }
 
 function getData() {
@@ -60,4 +61,28 @@ function post(data) {
   })
     .then((res) => res.json())
     .then((data) => console.log(data));
+}
+
+function createtoggleboxes() {
+  const checkfields = document.querySelectorAll(".checkfield_label");
+  for (let i = 0; i < checkfields.length; i++) {
+    let checkfield = checkfields[i];
+    clickToggleCheckbox(checkfield, i);
+  }
+
+  function clickToggleCheckbox(checkfield, i) {
+    checkfield.addEventListener("click", togglecheckboxes);
+
+    function togglecheckboxes() {
+      console.log("virker");
+      let element = document.querySelector(".dropdown" + i);
+      if (element.style.display === "none") {
+        document.querySelector(".span" + i).textContent = "▲";
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+        document.querySelector(".span" + i).textContent = "▼";
+      }
+    }
+  }
 }

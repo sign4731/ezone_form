@@ -5,6 +5,9 @@ body {
   overflow-x: none;
 }
 
+.hidden {
+  display: none;
+}
 .card_container {
   display: flex;
   justify-content: center;

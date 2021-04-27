@@ -100,4 +100,19 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   .card_form {
     padding: 200px 60px;
   }
+
+  .form_group_names {
+    display: flex;
+  }
+
+  #first_name {
+    margin-right: 120px;
+  }
+  #last_name {
+    margin-left: 25px;
+  }
+
+  body > main > div > div > div > div.card_contents.card_form > form > div.form_group > div.form_group_names > label {
+    margin-left: 178px;
+  }
 }

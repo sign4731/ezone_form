@@ -6,7 +6,7 @@ body {
 
 .card_form {
   background-color: v.$white;
-  padding: 50px 20px;
+  padding: 60px 40px;
 }
 
 .card_form button {
@@ -49,9 +49,6 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   flex-direction: column;
 
   margin: 20px 0;
-
-  label {
-  }
 
   ul {
     list-style-type: none;
@@ -96,5 +93,11 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
     background-color: v.$input_field;
     border: 0.5px solid v.$dark_blue;
     border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card_form {
+    padding: 200px 60px;
   }
 }

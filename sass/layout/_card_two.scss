@@ -7,9 +7,12 @@ body {
 .card_form {
   background-color: v.$white;
   padding: 60px 40px;
-}
 
-.card_form button {
+  p {
+    width: 290px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .form_group_names input,
@@ -57,17 +60,17 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   }
 
   span {
-    color: v.$input_stroke;
-    font-size: 0.8rem;
+    color: rgb(151, 151, 151);
+    font-size: 0.7rem;
   }
 }
 
 .checkfield_label {
   padding: 0 25px;
   display: flex;
-  margin-top: 10px;
   align-items: center;
   justify-content: space-between;
+  height: 40px;
 }
 
 .dropdown {
@@ -99,10 +102,6 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
 }
 
 @media screen and (min-width: 1000px) {
-  .card_form {
-    padding: 200px 60px;
-  }
-
   .form_group_names {
     display: flex;
   }

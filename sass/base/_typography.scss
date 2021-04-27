@@ -24,17 +24,20 @@
   h1 {
     color: v.$peach;
     font-family: "sharpiro-bold", sans-serif;
+    font-size: 2.1rem;
   }
 
   h2 {
     font-family: "sharpiro-bold", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: v.$white;
   }
 
   p {
     font-family: "sharpiro-regular", sans-serif;
     color: v.$white;
+    font-size: 0.8rem;
+    line-height: 1.15rem;
   }
 }
 
@@ -53,12 +56,29 @@
   }
 
   .form_group_names label,
-  .checkfield_label label {
-    color: grey;
+  .checkfield_label label,
+  #email + label {
+    color: rgb(151, 151, 151);
+    font-size: 0.7rem;
   }
 }
 
 button {
   font-family: "uniform-medium", sans-serif;
   font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+    }
+  }
 }

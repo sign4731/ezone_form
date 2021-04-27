@@ -13,7 +13,43 @@
   }
 
   .line {
-    border: 1px solid #bef8b9;
-    max-width: 50px;
+    margin: 14px 0;
+    border: 2px solid #bef8b9;
+    max-width: 80px;
+    border-radius: 1.2px;
+  }
+}
+
+.card_welcome,
+.card_thankyou {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.card-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.card_welcome button {
+  width: 160px; //delete - is in button.scss
+  align-self: flex-end;
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+.card_thankyou button {
+  width: 195px; //delete - is in button.scss
+  align-self: flex-end;
+  margin-top: 100px;
+  margin-bottom: -110px;
+  margin-right: -20px;
+}
+
+@media screen and (min-width: 600px) {
+  .card_welcome button {
+    margin-top: 90px;
+    margin-bottom: -70px;
   }
 }

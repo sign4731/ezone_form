@@ -8,6 +8,7 @@ function init() {
   console.log("page is loaded");
   getData();
   createtoggleboxes();
+  //   document.querySelector(".card_welcome").classList.add("hidden");
 }
 
 function getData() {

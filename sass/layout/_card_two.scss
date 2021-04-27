@@ -1,9 +1,5 @@
 @use "../abstracts/_vars.scss" as v;
 
-body {
-  background-color: grey;
-}
-
 .card_form {
   background-color: v.$white;
   padding: 50px 40px 70px 40px;
@@ -24,7 +20,7 @@ body {
   background-color: v.$input_field;
   border: 0.5px solid v.$input_stroke;
   height: 30px;
-  width: 98.8%;
+  width: 92.8%;
   border-radius: 7px;
   margin-top: 25px;
 
@@ -44,10 +40,6 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   padding: 0 25px;
   margin-top: -42px;
   transition: 0.2s ease;
-}
-
-#last_name + label {
-  margin-top: 26px;
 }
 
 #email + label {
@@ -116,6 +108,35 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   }
 }
 
+.platforms input,
+.types input,
+.games input,
+.areas input {
+  position: relative;
+}
+
+.platforms input:checked,
+.types input:checked,
+.games input:checked,
+.areas input:checked {
+  transition: all 1s;
+  background-color: blue;
+}
+
+.platforms input:checked:after,
+.types input:checked:after,
+.games input:checked:after,
+.areas input:checked:after {
+  content: "✓";
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  font-size: 18px;
+  color: v.$light_green;
+  z-index: 100;
+  transition: all 1s;
+}
+
 @media screen and (min-width: 1000px) {
   .form_group_names {
     display: flex;
@@ -126,14 +147,18 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   }
   #last_name {
     margin-left: 29px;
+    margin-right: -1.5px;
   }
 
   #last_name + label {
-    margin-top: 25px;
+    margin-top: 26px;
   }
 
   #email {
-    width: 94.8%;
+    width: 95.2%;
+  }
+  .form_group_names input {
+    width: 98.8%;
   }
 
   body > main > div > div > div > div.card_contents.card_form > form > div.form_group > div.form_group_names > label {

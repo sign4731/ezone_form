@@ -1,30 +1,54 @@
 @use "../abstracts/_vars.scss" as v;
 
 @font-face {
-  font-family: 'sharpiro-bold';
-  src:  url('/ezone-fonts/sharpiro-bold.woff2') format('woff2'),
+  font-family: "sharpiro-bold";
+  src: url("/ezone-fonts/sharpiro-bold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'sharpiro-regular';
-  src:  url('/ezone-fonts/sharpiro-regular.woff2') format('woff2'),
+  font-family: "sharpiro-regular";
+  src: url("/ezone-fonts/sharpiro-regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'uniform-black';
-  src:  url('/ezone-fonts/uniform-pro-con-black.woff2') format('woff2'),
+  font-family: "uniform-black";
+  src: url("/ezone-fonts/uniform-pro-con-black.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'uniform-medium';
-  src:  url('/ezone-fonts/uniform-pro-con-medium.woff2') format('woff2'),
+  font-family: "uniform-medium";
+  src: url("/ezone-fonts/uniform-pro-con-medium.woff2") format("woff2");
 }
 
+.card {
+  h1 {
+    color: v.$peach;
+    font-family: "sharpiro-bold", sans-serif;
+  }
 
-.card h1 {
-color: v.$peach;
+  h2 {
+    font-family: "sharpiro-bold", sans-serif;
+    font-size: 1.2rem;
+    color: v.$white;
+  }
+
+  p {
+    font-family: "sharpiro-regular", sans-serif;
+    color: v.$white;
+  }
 }
 
-.card_form h1{
-color: v.$dark_blue;
+.card_form {
+  h1 {
+    color: v.$dark_blue;
+  }
+
+  p {
+    color: v.$peach;
+  }
+}
+
+button {
+  font-family: "uniform-medium", sans-serif;
+  font-size: 1rem;
 }

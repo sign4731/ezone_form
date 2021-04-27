@@ -23,14 +23,14 @@ body {
   .card_welcome,
   .card_form,
   .card_thankyou {
-    border-radius: 25px;
+    border-radius: 50px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
-    padding: 40px;
+    padding: 50px;
   }
 
   .card_welcome,
   .card_thankyou {
-    min-height: 600px;
+    min-height: 400px;
   }
 }
 

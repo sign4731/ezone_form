@@ -22,20 +22,29 @@ function getData() {
   const gameEls = document.querySelectorAll("[name=game]:checked");
   gameEls.forEach((el) => games.push(el.value));
 
-  //   document.querySelector("#submit").addEventListener("click", post);
+  const areas = [];
+  const areaEls = document.querySelectorAll("[name=areas]:checked");
+  areaEls.forEach((el) => areas.push(el.value));
+
+  console.log(platforms, types, games, areas);
+
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function () {
+    post({
+      first_name: form.elements.first_name.value,
+      last_name: form.elements.last_name.value,
+      email: form.elements.email.value,
+      platform: platforms,
+      type: types,
+      game: games,
+      areas: areas,
+    });
+  });
 }
 
 function post(data) {
   console.log("Data is posted");
-  //   const data = {
-  //     first_name: "Paul",
-  //     last_name: "Poulsen",
-  //     age: 7,
-  //     platform: ["XBOX", "Playstation 4", "Playstation 5", "PC", "MAC"],
-  //     type: ["MMORPG", "Sports", "Racing"],
-  //     game: ["Tekken", "FIFA", "Super Mario", "Fortnite"],
-  //     areas: ["Hand/eye coordination", "Reaction time"],
-  //   };
 
   const postData = JSON.stringify(data);
   fetch("https://ezone-eb75.restdb.io/rest/information", {
@@ -48,5 +57,5 @@ function post(data) {
     body: postData,
   })
     .then((res) => res.json())
-    .then((data) => showInformation(data));
+    .then((data) => console.log(data));
 }

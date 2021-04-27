@@ -12,6 +12,11 @@
   float: right;
 }
 
+.card button:hover {
+  background-color: #bef8b9;
+  color: black;
+}
+
 .background button {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #654ef3;
@@ -24,6 +29,11 @@
   margin-top: 40px;
 }
 
+.background button:hover {
+  background-color: #654ef3;
+  color: black;
+}
+
 .card_form button {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #3e14d6;
@@ -33,4 +43,9 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+.card_form button:hover {
+  background-color: #3e14d6;
+  color: black;
 }

@@ -1,5 +1,6 @@
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus {
   ~ label {
-    transform: translate(-12%, -50%) scale(0.75);
+    transform: translate(-12%, -30%) scale(0.75);
   }
 }

@@ -3,8 +3,8 @@
   height: 100vh;
   background-image: url(/img/375vw.png);
   background-size: contain;
-  //   position: relative;
-  //   overflow-y: hidden;
+  overflow: hidden;
+  background-repeat: no-repeat;
   button {
     position: absolute;
     top: 70%;
@@ -13,6 +13,8 @@
   }
   @media (min-width: 768px) {
     background-image: url(/img/768vw.png);
+    background-size: contain;
+    object-fit: cover;
     button {
       top: 60%;
     }
@@ -21,7 +23,7 @@
     background-image: url(/img/1440vw.png);
     background-size: cover;
     button {
-      top: 90%;
+      top: 70%;
     }
   }
 }

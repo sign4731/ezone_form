@@ -10,6 +10,10 @@ function init() {
 }
 
 function getData() {
+  console.log("Getting data");
+
+  const form = document.querySelector("form");
+
   const platforms = [];
   const platformEls = document.querySelectorAll("[name=platform]:checked");
   platformEls.forEach((el) => platforms.push(el.value));
@@ -28,9 +32,7 @@ function getData() {
 
   console.log(platforms, types, games, areas);
 
-  const form = document.querySelector("form");
-
-  form.addEventListener("submit", function () {
+  document.querySelector("#submit").addEventListener("click", function () {
     post({
       first_name: form.elements.first_name.value,
       last_name: form.elements.last_name.value,

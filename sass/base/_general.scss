@@ -9,12 +9,12 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 100vw;
-  min-height: 100vh;
+  //   width: 100vw;
+  //   min-height: 600px;
 }
 
 .card {
-  min-height: 290px;
+  //   min-height: 600px;
   max-width: 350px;
 
   .card_welcome,
@@ -23,6 +23,11 @@ body {
     border-radius: 25px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
     padding: 40px;
+  }
+
+  .card_welcome,
+  .card_thankyou {
+    min-height: 600px;
   }
 }
 

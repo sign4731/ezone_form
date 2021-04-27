@@ -1,74 +1,100 @@
 @use "../abstracts/_vars.scss" as v;
 
-body{
-    background-color: grey;
+body {
+  background-color: grey;
 }
 
-.card .card_form{
-    background-color: v.$white;
-    padding: 10%;
+.card_form {
+  background-color: v.$white;
+  padding: 50px 20px;
 }
 
-.form_group_names input, #email {
-    background-color: v.$input_field;
-     border: 0.5px solid v.$input_stroke;
-      height:40px;
-     width: 98.8%;
-    border-radius: 7px;
-    margin: 5px 0;
-
-    position: relative;
-
+.card_form button {
 }
 
-.form_group_names label, body > main > div > div > div > div.card_contents.card_form > form > div > label{
-    position: absolute;
-    z-index: 1;
-    height:40px;
-    width: 100%;
+.form_group_names input,
+#email {
+  background-color: v.$input_field;
+  border: 0.5px solid v.$input_stroke;
+  height: 40px;
+  width: 98.8%;
+  border-radius: 7px;
+  margin-top: 25px;
 
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-
-       padding: 0 25px;
+  position: relative;
 }
 
-.checkfield_wrapper{
-     background-color: v.$input_field;
-     border: 0.5px solid v.$input_stroke;
-    
-     width: 100%;
-    border-radius: 7px;
-    margin: 5px 0;
+.form_group_names label,
+body > main > div > div > div > div.card_contents.card_form > form > div > label {
+  position: absolute;
+  z-index: 1;
+  height: 40px;
 
-    display: flex;
-    flex-direction: column;
-   
-    margin: 5px 0;
+  display: flex;
+  align-items: center;
 
-    label {
-        margin-top: 10px;
-    }
+  padding: 0 25px;
+  margin-top: 27px;
+}
 
-     ul{
-       list-style-type: none;
-       margin: 0;
+.checkfield_wrapper {
+  background-color: v.$input_field;
+  border: 0.5px solid v.$input_stroke;
+
+  width: 100%;
+  border-radius: 7px;
+  margin: 5px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px 0;
+
+  label {
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
- }
+  }
 
-}
-.checkfield_wrapper label, .checkfield_wrapper input {
-     padding: 0 25px;
-}
-
-
-
-.dropdown{
-   padding-top: 20px;
-      padding-left: 5vw;
+  span {
+    color: v.$input_stroke;
+    font-size: 0.8rem;
+  }
 }
 
+.checkfield_label {
+  padding: 0 25px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.dropdown {
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
 
+.card_form li {
+  padding: 8px 0;
+  display: flex;
 
+  label {
+    padding-left: 17px;
+  }
+
+  input {
+    -webkit-appearance: none;
+    appearance: none;
+
+    height: 20px;
+    width: 20px;
+    background-color: v.$input_field;
+    border: 0.5px solid v.$dark_blue;
+    border-radius: 4px;
+  }
+}

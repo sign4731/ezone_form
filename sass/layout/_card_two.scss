@@ -4,9 +4,12 @@ body {
   background-color: grey;
 }
 
-.card .card_form {
+.card_form {
   background-color: v.$white;
-  padding: 10%;
+  padding: 50px 20px;
+}
+
+.card_form button {
 }
 
 .form_group_names input,
@@ -16,7 +19,7 @@ body {
   height: 40px;
   width: 98.8%;
   border-radius: 7px;
-  margin: 5px 0;
+  margin-top: 25px;
 
   position: relative;
 }
@@ -26,13 +29,12 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   position: absolute;
   z-index: 1;
   height: 40px;
-  width: 100%;
 
   display: flex;
   align-items: center;
-  margin: 5px 0;
 
   padding: 0 25px;
+  margin-top: 27px;
 }
 
 .checkfield_wrapper {
@@ -46,10 +48,9 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   display: flex;
   flex-direction: column;
 
-  margin: 5px 0;
+  margin: 20px 0;
 
   label {
-    margin-top: 10px;
   }
 
   ul {
@@ -57,13 +58,43 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
     margin: 0;
     padding: 0;
   }
+
+  span {
+    color: v.$input_stroke;
+    font-size: 0.8rem;
+  }
 }
-.checkfield_wrapper label,
-.checkfield_wrapper input {
+
+.checkfield_label {
   padding: 0 25px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dropdown {
   padding-top: 20px;
-  padding-left: 5vw;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.card_form li {
+  padding: 8px 0;
+  display: flex;
+
+  label {
+    padding-left: 17px;
+  }
+
+  input {
+    -webkit-appearance: none;
+    appearance: none;
+
+    height: 20px;
+    width: 20px;
+    background-color: v.$input_field;
+    border: 0.5px solid v.$dark_blue;
+    border-radius: 4px;
+  }
 }

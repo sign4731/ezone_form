@@ -16,12 +16,13 @@ body {
 #email {
   background-color: v.$input_field;
   border: 0.5px solid v.$input_stroke;
-  height: 40px;
+  height: 30px;
   width: 98.8%;
   border-radius: 7px;
   margin-top: 30px;
 
   position: relative;
+  padding: 10px 0 0 20px;
 }
 
 .form_group_names label,
@@ -36,10 +37,6 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   padding: 0 25px;
   margin-top: -42px;
   transition: 0.2s ease;
-}
-
-#last_name + label {
-  margin-top: 32px;
 }
 
 #email + label {
@@ -121,6 +118,14 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   }
   #last_name {
     margin-left: 35px;
+  }
+
+  #last_name + label {
+    margin-top: 32px;
+  }
+
+  #email {
+    width: 94.8%;
   }
 
   body > main > div > div > div > div.card_contents.card_form > form > div.form_group > div.form_group_names > label {

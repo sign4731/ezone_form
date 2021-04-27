@@ -2,9 +2,9 @@
 
 .card button {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #bef8b9;
+  border: 2px solid v.$light_green;
   border-radius: 50px;
-  color: #bef8b9;
+  color: v.$light_green;
   padding: 8px 30px;
   text-align: center;
   text-decoration: none;
@@ -13,16 +13,16 @@
 }
 
 .card button:hover {
-  background-color: #bef8b9;
-  color: black;
+  background-color: v.$light_green;
+  color: v.$black;
   transition: 0.7s;
 }
 
 .background button {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #654ef3;
+  border: 2px solid v.$purple;
   border-radius: 50px;
-  color: #654ef3;
+  color: v.$purple;
   padding: 8px 30px;
   text-align: center;
   text-decoration: none;
@@ -31,16 +31,16 @@
 }
 
 .background button:hover {
-  background-color: #654ef3;
-  color: black;
+  background-color: v.$purple;
+  color: v.$black;
   transition: 0.7s;
 }
 
 .card_form button {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #3e14d6;
+  border: 2px solid v.$dark_blue;
   border-radius: 50px;
-  color: #3e14d6;
+  color: v.$dark_blue;
   padding: 8px 30px;
   text-align: center;
   text-decoration: none;
@@ -48,8 +48,8 @@
 }
 
 .card_form button:hover {
-  background-color: #3e14d6;
-  color: black;
+  background-color: v.$dark_blue;
+  color: v.$black;
   transition: 0.7s;
 }
 
@@ -63,7 +63,7 @@ button:hover {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);

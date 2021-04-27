@@ -46,13 +46,10 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   transition: 0.2s ease;
 }
 
-<<<<<<< HEAD
 #last_name + label {
   margin-top: 26px;
 }
 
-=======
->>>>>>> 10f16ca961d3a2b2c1c9616fc70698f440e5e633
 #email + label {
   color: grey;
 }
@@ -131,7 +128,7 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   }
 
   #last_name + label {
-    margin-top: 32px;
+    margin-top: 25px;
   }
 
   #email {
@@ -139,6 +136,6 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   }
 
   body > main > div > div > div > div.card_contents.card_form > form > div.form_group > div.form_group_names > label {
-    margin-left: 180px;
+    margin-left: 179px;
   }
 }

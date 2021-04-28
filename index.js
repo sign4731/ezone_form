@@ -107,3 +107,19 @@ function closeAll() {
     detail.removeAttribute("open");
   });
 }
+
+//CLICK -> OPEN FORMS
+document.querySelector("#signUp").addEventListener("click", openForms);
+
+function openForms() {
+  document.querySelector(".cards_wrapper").classList.remove("hidden");
+  console.log("opening forms");
+}
+
+//CLICK -> CLOSING FORMS
+document.querySelector("#goBack").addEventListener("click", closeForms);
+
+function closeForms() {
+  document.querySelector(".cards_wrapper").classList.add("hidden");
+  console.log("closing forms");
+}

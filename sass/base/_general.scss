@@ -12,6 +12,10 @@ body {
   display: none !important;
 }
 
+.valid {
+  box-shadow: 0 0 0 2px v.$dark_blue !important;
+}
+
 .cards_wrapper {
   width: 100vw;
 }

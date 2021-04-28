@@ -83,3 +83,27 @@ function createtoggleboxes() {
     }
   }
 }
+
+//CLOSE DROPDOWN WHEN CLICKING ON NEW DROPDOWN
+const details = document.querySelectorAll("details");
+
+// Add the onclick listeners.
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    // Close all the details that are not targetDetail.
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
+
+document.querySelector("#submit").addEventListener("click", closeAll);
+
+function closeAll() {
+  //Close all dropdowns when clicked om "IM IN"
+  details.forEach((detail) => {
+    detail.removeAttribute("open");
+  });
+}

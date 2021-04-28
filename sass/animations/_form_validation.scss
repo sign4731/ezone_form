@@ -1,18 +1,10 @@
 @use "../abstracts/_vars.scss" as v;
 
 input[type="text"]:focus,
-input[type="email"]:focus {
-  background-color: v.$input_field;
-  color: v.$dark_blue;
-  ~ label {
-    transform: translate(-12%, -30%) scale(0.75);
-    opacity: 0.6;
-  }
-}
-
+input[type="email"]:focus,
 input[type="text"]:valid,
 input[type="email"]:valid {
-  box-shadow: 0 0 0 2px v.$light_green;
+  background-color: v.$input_field;
   color: v.$dark_blue;
   ~ label {
     transform: translate(-12%, -30%) scale(0.75);

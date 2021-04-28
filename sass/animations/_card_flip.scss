@@ -1,0 +1,16 @@
+.rotated {
+  transform: rotateY(-180deg);
+}
+
+.card_contents {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.card_thankyou {
+  z-index: -1;
+}
+.card-depth {
+  transform: translateZ(1px) scale(0.98);
+  perspective: inherit;
+}

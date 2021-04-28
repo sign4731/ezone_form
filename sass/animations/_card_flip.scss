@@ -1,5 +1,9 @@
-.rotated {
+.rotated_once {
   transform: rotateY(-180deg);
+}
+
+.rotated_twice {
+  transform: rotateY(-360deg);
 }
 
 .card_contents {
@@ -10,6 +14,7 @@
 .card_thankyou {
   z-index: -1;
 }
+
 .card-depth {
   transform: translateZ(1px) scale(0.98);
   perspective: inherit;

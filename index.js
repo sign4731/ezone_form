@@ -1,6 +1,5 @@
 import "./sass/style.scss";
 import { clickRotate } from "./rotate.js";
-const rotateButton = document.querySelector(".rotate_one");
 
 ("use strict");
 
@@ -10,7 +9,7 @@ function init() {
   console.log("page is loaded");
   getData();
   createtoggleboxes();
-  rotateButton.addEventListener("click", clickRotate);
+  document.querySelectorAll(".rotate").forEach((button) => button.addEventListener("click", clickRotate));
   //   document.querySelector(".card_welcome").classList.add("hidden");
 }
 

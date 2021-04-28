@@ -19,18 +19,13 @@ function getData() {
   console.log("Getting data");
   const form = document.querySelector("form");
 
-  checkboxValidity("platform");
-  checkboxValidity("type");
-  checkboxValidity("game");
-  checkboxValidity("area");
-
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const platforms = getCheckboxValues("platform");
     const types = getCheckboxValues("type");
     const games = getCheckboxValues("game");
-    const areas = getCheckboxValues("area");
+    const areas = getCheckboxValues("areas");
 
     getPersonalName();
 
@@ -41,28 +36,9 @@ function getData() {
       platform: platforms,
       type: types,
       game: games,
-      area: areas,
+      areas: areas,
     });
   });
-}
-
-function checkboxValidity(name) {
-  console.log("checking validity");
-  const checkbox = document.querySelectorAll(`[name=${name}]`);
-
-  checkbox.forEach((box) =>
-    box.addEventListener("click", function () {
-      const checkedOne = Array.prototype.slice.call(checkbox).some((x) => x.checked);
-      console.log(checkedOne);
-      if (checkedOne) {
-        // Checkbox is checked..
-        document.querySelector(`.${name}s .checkfield_wrapper`).classList.add("valid");
-      } else {
-        // Checkbox is not checked..
-        document.querySelector(`.${name}s .checkfield_wrapper`).classList.remove("valid");
-      }
-    })
-  );
 }
 
 function getCheckboxValues(name) {
@@ -115,12 +91,6 @@ function eventListeners() {
   document.querySelector("#signUp").addEventListener("click", openForms);
   //CLICK -> CLOSING FORMS
   document.querySelector("#goBack").addEventListener("click", closeForms);
-  document.querySelector(".card_container").addEventListener("click", closeCard);
-}
-
-function closeCard() {
-  //   document.querySelector(".cards_wrapper").classList.add("hidden");
-  document.querySelector(".card_container").stopPropagation();
 }
 
 function closeDropdown() {
@@ -141,6 +111,8 @@ function closeDropdown() {
 }
 
 function closeAll() {
+  const details = document.querySelectorAll("details");
+  console.log("closeAll");
   //Close all dropdowns when clicked om "IM IN"
   details.forEach((detail) => {
     detail.removeAttribute("open");

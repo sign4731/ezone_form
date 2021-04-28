@@ -1,5 +1,6 @@
 import "./sass/style.scss";
 import { clickRotate } from "./rotate.js";
+import { getPersonalName } from "./personal_name.js";
 
 ("use strict");
 
@@ -24,6 +25,8 @@ function getData() {
     const types = getCheckboxValues("type");
     const games = getCheckboxValues("game");
     const areas = getCheckboxValues("areas");
+
+    getPersonalName();
 
     post({
       first_name: form.elements.first_name.value,

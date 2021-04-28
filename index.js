@@ -10,7 +10,7 @@ function init() {
   console.log("page is loaded");
   getData();
   createtoggleboxes();
-  document.querySelectorAll(".rotate").forEach((button) => button.addEventListener("click", clickRotate));
+  rotateButton.addEventListener("click", clickRotate);
   //   document.querySelector(".card_welcome").classList.add("hidden");
 }
 
@@ -75,14 +75,10 @@ function createtoggleboxes() {
     checkfield.addEventListener("click", togglecheckboxes);
 
     function togglecheckboxes() {
-      console.log("virker");
-      let element = document.querySelector(".dropdown" + i);
-      if (element.style.display === "none") {
-        document.querySelector(".span" + i).textContent = "▲";
-        element.style.display = "block";
+      if (checkfield.parentElement.open) {
+        checkfield.childNodes[1].textContent = "▼";
       } else {
-        element.style.display = "none";
-        document.querySelector(".span" + i).textContent = "▼";
+        checkfield.childNodes[1].textContent = "▲";
       }
     }
   }

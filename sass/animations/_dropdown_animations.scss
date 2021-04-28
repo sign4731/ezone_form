@@ -1,25 +1,19 @@
 @use "../abstracts/_vars.scss" as v;
-
-form {
-  max-inline-size: 500px;
+details {
   overflow: hidden;
 }
-
-form[open] .dropdown {
-  animation: show 0.6s both;
+details[open] {
+  animation: show 2s both;
 }
 
-.platforms {
+summary {
   user-select: none;
 }
-
-.dropdown {
-  max-block-size: 0;
-  transition: 0.6s;
-}
-
 @keyframes show {
+  from {
+    max-block-size: 0px;
+  }
   to {
-    max-block-size: 600px;
+    max-block-size: 1000px;
   }
 }

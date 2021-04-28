@@ -13,28 +13,16 @@ function init() {
 
 function getData() {
   console.log("Getting data");
-
   const form = document.querySelector("form");
 
-  const platforms = [];
-  const platformEls = document.querySelectorAll("[name=platform]:checked");
-  platformEls.forEach((el) => platforms.push(el.value));
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const types = [];
-  const typeEls = document.querySelectorAll("[name=type]:checked");
-  typeEls.forEach((el) => types.push(el.value));
+    const platforms = getCheckboxValues("platform");
+    const types = getCheckboxValues("type");
+    const games = getCheckboxValues("game");
+    const areas = getCheckboxValues("areas");
 
-  const games = [];
-  const gameEls = document.querySelectorAll("[name=game]:checked");
-  gameEls.forEach((el) => games.push(el.value));
-
-  const areas = [];
-  const areaEls = document.querySelectorAll("[name=areas]:checked");
-  areaEls.forEach((el) => areas.push(el.value));
-
-  console.log(platforms, types, games, areas);
-
-  document.querySelector("#submit").addEventListener("click", function () {
     post({
       first_name: form.elements.first_name.value,
       last_name: form.elements.last_name.value,
@@ -45,6 +33,13 @@ function getData() {
       areas: areas,
     });
   });
+}
+
+function getCheckboxValues(name) {
+  const items = [];
+  const itemEls = document.querySelectorAll(`[name=${name}]:checked`);
+  itemEls.forEach((el) => items.push(el.value));
+  return items;
 }
 
 function post(data) {

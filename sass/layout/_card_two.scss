@@ -86,6 +86,11 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
 
   display: none;
   transition: 1s;
+  .pick {
+    color: #979797;
+    font-size: 0.7rem;
+    font-family: "sharpiro-regular", sans-serif;
+  }
 }
 
 .card_form li {

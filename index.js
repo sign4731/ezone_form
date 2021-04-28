@@ -19,13 +19,18 @@ function getData() {
   console.log("Getting data");
   const form = document.querySelector("form");
 
+  checkboxValidity("platform");
+  checkboxValidity("type");
+  checkboxValidity("game");
+  checkboxValidity("area");
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const platforms = getCheckboxValues("platform");
     const types = getCheckboxValues("type");
     const games = getCheckboxValues("game");
-    const areas = getCheckboxValues("areas");
+    const areas = getCheckboxValues("area");
 
     getPersonalName();
 
@@ -36,9 +41,28 @@ function getData() {
       platform: platforms,
       type: types,
       game: games,
-      areas: areas,
+      area: areas,
     });
   });
+}
+
+function checkboxValidity(name) {
+  console.log("checking validity");
+  const checkbox = document.querySelectorAll(`[name=${name}]`);
+
+  checkbox.forEach((box) =>
+    box.addEventListener("click", function () {
+      const checkedOne = Array.prototype.slice.call(checkbox).some((x) => x.checked);
+      console.log(checkedOne);
+      if (checkedOne) {
+        // Checkbox is checked..
+        document.querySelector(`.${name}s .checkfield_wrapper`).classList.add("valid");
+      } else {
+        // Checkbox is not checked..
+        document.querySelector(`.${name}s .checkfield_wrapper`).classList.remove("valid");
+      }
+    })
+  );
 }
 
 function getCheckboxValues(name) {

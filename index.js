@@ -107,3 +107,43 @@ function createtoggleboxes() {
     }
   }
 }
+
+//CLOSE DROPDOWN WHEN CLICKING ON NEW DROPDOWN
+const details = document.querySelectorAll("details");
+
+// Add the onclick listeners.
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    // Close all the details that are not targetDetail.
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
+
+document.querySelector("#submit").addEventListener("click", closeAll);
+
+function closeAll() {
+  //Close all dropdowns when clicked om "IM IN"
+  details.forEach((detail) => {
+    detail.removeAttribute("open");
+  });
+}
+
+//CLICK -> OPEN FORMS
+document.querySelector("#signUp").addEventListener("click", openForms);
+
+function openForms() {
+  document.querySelector(".cards_wrapper").classList.remove("hidden");
+  console.log("opening forms");
+}
+
+//CLICK -> CLOSING FORMS
+document.querySelector("#goBack").addEventListener("click", closeForms);
+
+function closeForms() {
+  document.querySelector(".cards_wrapper").classList.add("hidden");
+  console.log("closing forms");
+}

@@ -1,5 +1,9 @@
 @use "../abstracts/_vars.scss" as v;
 
+button {
+  cursor: pointer;
+}
+
 .card button {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid v.$light_green;

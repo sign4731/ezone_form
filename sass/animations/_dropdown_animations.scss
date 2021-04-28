@@ -1,7 +1,9 @@
 @use "../abstracts/_vars.scss" as v;
+
 details {
   overflow: hidden;
 }
+
 details[open] {
   animation: show 2s both;
 }
@@ -9,6 +11,7 @@ details[open] {
 summary {
   user-select: none;
 }
+
 @keyframes show {
   from {
     max-block-size: 0px;

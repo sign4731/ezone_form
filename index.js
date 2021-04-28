@@ -65,7 +65,7 @@ function post(data) {
 }
 
 function createtoggleboxes() {
-  const checkfields = document.querySelectorAll(".checkfield_label");
+  const checkfields = document.querySelectorAll(".checkfield_label", ".checkfield_label label");
   for (let i = 0; i < checkfields.length; i++) {
     let checkfield = checkfields[i];
     clickToggleCheckbox(checkfield, i);

@@ -77,6 +77,10 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
   align-items: center;
   justify-content: space-between;
   height: 40px;
+  cursor: pointer;
+  label {
+    pointer-events: none;
+  }
 }
 
 .dropdown {
@@ -109,6 +113,7 @@ body > main > div > div > div > div.card_contents.card_form > form > div > label
     background-color: v.$input_field;
     border: 0.5px solid v.$dark_blue;
     border-radius: 4px;
+    cursor: pointer;
   }
 }
 

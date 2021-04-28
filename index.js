@@ -11,7 +11,8 @@ function init() {
   getData();
   createtoggleboxes();
   document.querySelectorAll(".rotate").forEach((button) => button.addEventListener("click", clickRotate));
-  //   document.querySelector(".card_welcome").classList.add("hidden");
+  eventListeners();
+  closeDropdown();
 }
 
 function getData() {
@@ -84,22 +85,36 @@ function createtoggleboxes() {
   }
 }
 
-//CLOSE DROPDOWN WHEN CLICKING ON NEW DROPDOWN
-const details = document.querySelectorAll("details");
+function eventListeners() {
+  document.querySelector("#submit").addEventListener("click", closeAll);
+  //CLICK -> OPEN FORMS
+  document.querySelector("#signUp").addEventListener("click", openForms);
+  //CLICK -> CLOSING FORMS
+  document.querySelector("#goBack").addEventListener("click", closeForms);
+  document.querySelector(".card_container").addEventListener("click", closeCard);
+}
 
-// Add the onclick listeners.
-details.forEach((targetDetail) => {
-  targetDetail.addEventListener("click", () => {
-    // Close all the details that are not targetDetail.
-    details.forEach((detail) => {
-      if (detail !== targetDetail) {
-        detail.removeAttribute("open");
-      }
+function closeCard() {
+  //   document.querySelector(".cards_wrapper").classList.add("hidden");
+  document.querySelector(".card_container").stopPropagation();
+}
+
+function closeDropdown() {
+  //CLOSE DROPDOWN WHEN CLICKING ON NEW DROPDOWN
+  const details = document.querySelectorAll("details");
+
+  // Add the onclick listeners.
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      // Close all the details that are not targetDetail.
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
     });
   });
-});
-
-document.querySelector("#submit").addEventListener("click", closeAll);
+}
 
 function closeAll() {
   //Close all dropdowns when clicked om "IM IN"
@@ -108,16 +123,10 @@ function closeAll() {
   });
 }
 
-//CLICK -> OPEN FORMS
-document.querySelector("#signUp").addEventListener("click", openForms);
-
 function openForms() {
   document.querySelector(".cards_wrapper").classList.remove("hidden");
   console.log("opening forms");
 }
-
-//CLICK -> CLOSING FORMS
-document.querySelector("#goBack").addEventListener("click", closeForms);
 
 function closeForms() {
   document.querySelector(".cards_wrapper").classList.add("hidden");

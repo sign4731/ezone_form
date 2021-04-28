@@ -8,6 +8,10 @@ details[open] {
   animation: show 2s both;
 }
 
+.hide {
+  animation: hide 2s both;
+}
+
 summary {
   user-select: none;
 }
@@ -18,5 +22,14 @@ summary {
   }
   to {
     max-block-size: 1000px;
+  }
+}
+
+@keyframes hide {
+  from {
+    max-block-size: 1000px;
+  }
+  to {
+    max-block-size: 0px;
   }
 }
